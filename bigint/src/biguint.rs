@@ -930,7 +930,7 @@ impl BigUint {
     }
     
     // just for testing
-    fn digits(&self) -> Vec<u32> {
+    pub fn digits(&self) -> Vec<u32> {
         self.data.clone()
     }
 
