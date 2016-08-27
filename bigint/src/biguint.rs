@@ -928,6 +928,11 @@ impl BigUint {
     pub fn new(digits: Vec<BigDigit>) -> BigUint {
         BigUint { data: digits }.normalize()
     }
+    
+    // just for testing
+    fn digits(&self) -> Vec<u32> {
+        self.data.clone()
+    }
 
     /// Creates and initializes a `BigUint`.
     ///
